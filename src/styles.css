@@ -44,10 +44,13 @@ body{
 
 .navigation{
     grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 100px;
 }
 
 .content{
     grid-column: 2/3;
 }
+
 
 
