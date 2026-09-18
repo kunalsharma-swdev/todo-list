@@ -21,6 +21,9 @@
 - dateadded
 - datecompleted
 
-
-
+## Color Pallete
+- #8B9A6E - GREEN
+- #F7F2EB - CREME
+- #EAE2D6 - BROWNISH CREME
+- #EEEEEE - WHITE
 
