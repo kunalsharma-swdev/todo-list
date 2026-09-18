@@ -17,6 +17,9 @@
 - notess
 - checklist
 - projects
+- iscomplete?
+- dateadded
+- datecompleted
 
 
 
