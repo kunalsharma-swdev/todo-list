@@ -9,14 +9,50 @@
     <script defer src="main.js"></script></head>
     <body>
         <div class="main">
+            <div class="overlay-two">
+                <div class="project-form">
+                    
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="main-form">
+                    <div class="main-form-heading">
+                        <div class="main-form-heading-one">Add Todo</div>
+                    </div>
+                    <form id="form">
+                        <input type="text" id="title" name="title" placeholder="Title" class="input" required>
+                        <textarea id="description" placeholder="Enter Description..."></textarea>
+                        <div class="second">
+                            <label for="duedate">Due date</label>
+                            <input type="date" id="duedate" name="duedate" placeholder="21/12/2025" required>
+                            <label for="project">Project</label>
+                            <select id="project">
+                                <option value="nothing">No project</option>
+                            </select>
+                        </div>
+                        <div class="third">
+                            <label for="priority">Priority</label>
+                            <select id="priority">
+                                <option value="low">Low</option>
+                                <option value="medium">medium</option>
+                                <option vallue="high">high</option>
+                            </select>
+                        </div>
+                        <div class="fourth">
+                            <textarea id="notes" name="notes" placeholder="notes..."></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="header">
                 To-do List
             </div>
             <div class="navigation">
                 <div class="navigation-content">
-                    <div class="group-heading">Home</div>
-                    <div class="group-heading">Today</div>
-                    <div class="group-heading">Week</div>
+                    <div class="group-heading home">Home</div>
+                    <div class="group-heading today">Today</div>
+                    <div class="group-heading week">Week</div>
                     <div class="group-heading project">Projects</div>
                     <div class="Projects">
                         <div class="one">Hello</div>
@@ -25,7 +61,8 @@
                     </div>
                 </div>
                 <div class="navigation-add">
-                    <button class="add">Add Todo/Project</button>
+                    <button class="add">Add Todo</button>
+                    <button class="add-project">Add Project</button>
                 </div>
             </div>
             <div class="content"></div>
