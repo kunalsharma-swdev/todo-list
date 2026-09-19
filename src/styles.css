@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+}
+
+
+.main-form{
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #E3E5F0;
+    border-radius: 7%;
+}
+
 html{
     background-color: #D9D7E8;
     font-family: Orbitron;
@@ -120,5 +139,72 @@ body{
     background-color: #4F5DA8;
 }
 
+.main-form{
+    padding: 30px;
+}
 
+.main-form-heading{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
 
+#form{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form > input{
+    overflow-wrap: anywhere;
+}
+
+#title, #description, #date, #project, #priority,#notes{
+    font-family: Orbitron;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#title{
+    font-size: 1.5rem;
+}
+
+#description{
+    font-size: 1.2rem;
+    resize: none;
+    height: 100px;
+}
+
+#date{
+    margin-right: 10%;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    height: 40px;
+}
+
+.third{
+    display: flex;
+    gap: 20px;
+}
+
+#notes{
+    resize: none;
+    width: 70%;
+}
+
+.fourth{
+    display: flex;
+    gap: 5%;
+}
+
+button[type="submit"]{
+    width: 20%;
+
+}
