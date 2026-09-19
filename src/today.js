@@ -13,8 +13,6 @@ function rendertoday(){
         String(today.getMonth() + 1).padStart(2, "0") + "-" +
         String(today.getDate()).padStart(2, "0");
     for (let i = 0; i < todos.length; i++) {
-        console.log("todayDate:", todayDate);
-        console.log("todoDate:", todos[i].duedate);
         if(todos[i].duedate==todayDate){
             let todoDiv = document.createElement("div");
             todoDiv.classList.add("todo");

@@ -1,6 +1,10 @@
 import "./styles.css";
 import { todos , todo,reload } from "./todo.js"
+import { projects, project ,projectreload ,projectrender} from "./projects.js"
+let projectform = document.querySelector("#project-for");
 reload();
+projectreload();
+projectrendor();
 let current="home";
 import { rendertoday } from "./today.js";
 import { renderweek }  from "./week.js"
@@ -33,6 +37,14 @@ projectadd.addEventListener("click",()=>{
     overlaytwo.style.display="block";
 })
 
+projectform.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    let title = document.querySelector("#project-title").value;
+    projects[projects.length] = project(title);
+    localStorage.setItem("projects", JSON.stringify(projects));
+    overlay.style.display="none";
+    form.reset();
+})
 
 
 form.addEventListener("submit", (event)=>{

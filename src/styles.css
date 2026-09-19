@@ -155,11 +155,31 @@ body{
     padding: 30px;
 }
 
-.main-form-heading{
+.main-form-heading, .project-form-heading{
     display: flex;
     gap: 30px;
     margin-bottom: 20px;
     font-size: 1.5rem;
+}
+#project-title{
+    padding-left: 30px;
+}
+
+.project-form-heading{
+    padding: 30px;
+}
+
+#project-for{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+#project-for > button{
+    margin-left: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
 }
 
 #form{
@@ -173,14 +193,14 @@ body{
     overflow-wrap: anywhere;
 }
 
-#title, #description, #date, #project, #priority,#notes{
+#title, #description, #date, #project, #priority,#notes, #project-title{
     font-family: Orbitron;
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-#title{
+#title,#project-title{
     font-size: 1.5rem;
 }
 
