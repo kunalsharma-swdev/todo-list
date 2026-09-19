@@ -22,8 +22,19 @@
 - datecompleted
 
 ## Color Pallete
-- #8B9A6E - GREEN
-- #F7F2EB - CREME
-- #EAE2D6 - BROWNISH CREME
-- #EEEEEE - WHITE
+| Element                | Color     |
+| ---------------------- | --------- |
+| **Overall background** | `#D9D7E8` |
+| **Header**             | `#BFC8E6` |
+| **Navigation**         | `#C9D0E8` |
+| **Content**            | `#E3E5F0` |
+| **Todo cards**         | `#F0F1F7` |
+| **Primary accent**     | `#5967B3` |
+| **Accent light**       | `#D5D9F2` |
+| **Main text**          | `#25283A` |
+| **Secondary text**     | `#686D80` |
+| **Borders**            | `#B7BDD2` |
+| **Completed**          | `#5E9B76` |
+| **Delete**             | `#C96767` |
+
 

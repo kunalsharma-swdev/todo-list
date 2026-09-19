@@ -5,7 +5,8 @@
 }
 
 html{
-    background-color: #EAE2D6;
+    background-color: #D9D7E8;
+    font-family: Orbitron;
 }
 
 body{
@@ -20,16 +21,16 @@ body{
     height: 95vh;
     width: 95vw;
     display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: minmax(0,2fr) minmax(0,6fr);
+    grid-template-rows: 100px minmax(0,1fr);
     gap: 20px;
 }
 
 .header, .navigation, .content{
-    background-color: #8B9A6E;
-    border: 5px solid #F7F2EB;
+    border: 5px solid #B7BDD2;
     border-radius: 25px;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 .header{
@@ -39,17 +40,84 @@ body{
     display: flex;
     align-items: center;
     font-size: 3rem;
-    color: #F7F2EB;
+    background-color: #BFC8E6;
+    color: #4B5068;
 }
 
 .navigation{
     grid-column: 1/2;
     display: grid;
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 1fr 70px;
+    background-color: #C9D0E8;
+    min-width: 0;
 }
 
 .content{
     grid-column: 2/3;
+    background-color: #E3E5F0;
+}
+
+.navigation-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+    min-height: 0;
+}
+
+.group-heading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #4F5468;
+}
+
+.group-heading:hover{
+    color: #5967B3;
+}
+
+.project{
+    margin-top: 50px;
+}
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: #4F5468;
+    gap: 10px;
+    overflow: auto;
+    
+}
+
+.Projects > div{
+    padding-left: 60px;
+    overflow-wrap: anywhere;
+}
+
+.Projects > div:hover{
+    color: #5967B3;
+}
+
+.navigation-add{
+    display: flex;
+
+}
+
+.add{
+    height: 45px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #5967B3;
+    color: #FFFFFF;
+    font-family: Orbitron;
+    font-weight: 500;
+    
+}
+
+.add:hover{
+    background-color: #4F5DA8;
 }
 
 
