@@ -1,3 +1,5 @@
+
+let content = document.querySelector(".content");
 let todos = [];
 function todo(title1, description1, duedate1,priority1, notes1,projects1){
     let today = new Date();
@@ -15,4 +17,14 @@ function todo(title1, description1, duedate1,priority1, notes1,projects1){
     };
 }
 
-export { todos, todo }
+function reload(){
+    todos = JSON.parse(localStorage.getItem("todos")) || [];
+}
+
+function deletetodo(idd){
+    todos = JSON.parse(localStorage.getItem("todos")) || [];
+    todos = todos.filter(todo => todo.id !== idd);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+export { todos,todo,reload , deletetodo}
