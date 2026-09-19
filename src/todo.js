@@ -2,6 +2,7 @@ let todos = [];
 function todo(title1, description1, duedate1,priority1, notes1,projects1){
     let today = new Date();
     return {
+        id: crypto.randomUUID(),
         title: title1,
         description: description1,
         duedate: duedate1,
@@ -13,3 +14,5 @@ function todo(title1, description1, duedate1,priority1, notes1,projects1){
         datecompleted: null
     };
 }
+
+export { todos, todo }
