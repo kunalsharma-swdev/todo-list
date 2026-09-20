@@ -4,7 +4,7 @@ import { projects, project ,projectreload ,projectrender} from "./projects.js"
 let projectform = document.querySelector("#project-for");
 reload();
 projectreload();
-projectrendor();
+projectrender();
 let current="home";
 import { rendertoday } from "./today.js";
 import { renderweek }  from "./week.js"
@@ -42,8 +42,15 @@ projectform.addEventListener("submit",(event)=>{
     let title = document.querySelector("#project-title").value;
     projects[projects.length] = project(title);
     localStorage.setItem("projects", JSON.stringify(projects));
-    overlay.style.display="none";
+    overlaytwo.style.display="none";
+    const select = document.querySelector("#project");
+    const option = document.createElement("option");
+    option.value = title;
+    option.textContent = title;
+    option.classList.add(projects[projects.length-1].id);
+    select.appendChild(option);
     form.reset();
+    projectrender();
 })
 
 
