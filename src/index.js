@@ -49,7 +49,7 @@ projectform.addEventListener("submit",(event)=>{
     option.textContent = title;
     option.classList.add(projects[projects.length-1].id);
     select.appendChild(option);
-    form.reset();
+    projectform.reset();
     projectrender();
 })
 
