@@ -8,6 +8,11 @@ import "./today.css";
 function rendertoday(){
     let today = new Date();
     content.innerHTML = "";
+    if(todos.length==0){
+        let p = document.createElement("p");
+        p.textContent="Pretty empty, add todos to start your work!";
+        content.appendChild(p);
+    }
     let todayDate =
         today.getFullYear() + "-" +
         String(today.getMonth() + 1).padStart(2, "0") + "-" +
