@@ -63,6 +63,9 @@ function specificprojectrender(titlee){
             let checkbox = document.createElement("input");
             checkbox.classList.add("checkbox");
             checkbox.type="checkbox";
+            checkbox.addEventListener("change", () => {
+                todos[i].checklist = checkbox.checked;
+            });
             todoDiv.appendChild(title);
             todoDiv.appendChild(priority);
             todoDiv.appendChild(date);

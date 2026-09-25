@@ -2,12 +2,16 @@ import "./styles.css";
 import { todos , todo,reload } from "./todo.js"
 import { projects, project ,projectreload ,projectrender} from "./projects.js"
 let projectform = document.querySelector("#project-for");
+import { renderhome } from "./home.js";
 reload();
 projectreload();
 projectrender();
+renderhome();
 let current="home";
+
 import { rendertoday } from "./today.js";
 import { renderweek }  from "./week.js"
+const home = document.querySelector(".home");
 const week = document.querySelector(".week");
 const today = document.querySelector(".today");
 today.addEventListener("click",()=>{
@@ -20,6 +24,12 @@ week.addEventListener("click",()=>{
     if(current!="week"){
         current="week";
         renderweek();
+    }
+})
+home.addEventListener("click",()=>{
+    if(current!="home"){
+        current="home";
+        renderhome();
     }
 })
 
